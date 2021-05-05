@@ -5,7 +5,7 @@ The main objective of this challenge is to test your abilities as a front-end de
 ## Challenge
 
 Create a web application that shows every **Rick and Morty** character with its description.
-> **Note:** For this challenge you'll have to use ReactJs or VueJs. You can also use design libraries such as [Ant Design](https://ant.design), [Material-UI](https://material-ui.com), [React bootstrap](https://react-bootstrap.github.io), among others.
+> **Note:** For this challenge you must use ReactJs or VueJs. Also you can use design libraries such as [Ant Design](https://ant.design), [Material-UI](https://material-ui.com), [React bootstrap](https://react-bootstrap.github.io), among others.
 
 ### Instructions
 

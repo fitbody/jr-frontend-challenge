@@ -9,7 +9,7 @@ Create a web application that shows every **Rick and Morty** character with its 
 
 ### Instructions
 
-You'll have to consume the following REST API: [The Rick and Morty API](https://rickandmortyapi.com)
+You must consume the following REST API: [The Rick and Morty API](https://rickandmortyapi.com)
 
  1. First view: 
 	- Get list with every character, this view must be displayed in a [GRID](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout) and has to be shown as a card list [Card view](https://material.io/develop/android/components/cards/), in which you'll have to show the character's most important data, [take as reference the same page for this cards](https://rickandmortyapi.com).

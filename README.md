@@ -1,36 +1,37 @@
 # Rick and Morty App!
 
-Esta aplicación tiene como objetivo poner a prueba las habilidades del desarrollador.
+The main objective of this challenge is to test your abilities as a front-end developer.
 
-## Desafío
+## Challenge
 
-Crear una aplicación web el cual contenga las descripciones de todos los personajes de la serie **Rick and Morty** .
-> **Nota:** Para este desafió deberás usar React o Vuejs, puedes usar también algunas librerías de diseño como son [Ant Design](https://ant.design), [Material-UI](https://material-ui.com), [React bootstrap](https://react-bootstrap.github.io), entre otros.
+Create a web application that shows every **Rick and Morty** character with its description.
+> **Note:** For this challenge you'll have to use ReactJs or VueJs. You can also use design libraries such as [Ant Design](https://ant.design), [Material-UI](https://material-ui.com), [React bootstrap](https://react-bootstrap.github.io), among others.
 
-### Instrucciones
+### Instructions
 
-Deberas consumir la siguiente API REST  [The Rick and Morty API](https://rickandmortyapi.com)
+You'll have to consume the following REST API: [The Rick and Morty API](https://rickandmortyapi.com)
 
- 1. Primera vista: 
-	- Obtener la lista de todos los personajes, esta vista deberá desplegarse en un [GRID](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout) y debera mostrarse como una lista de tarjetas [Card view](https://material.io/develop/android/components/cards/), el cual deben desplegarse los siguentes datos del personaje mas importantes del personaje, [tomar como referencia la misma pagina para estas tarjetas](https://rickandmortyapi.com).
-	- Deberá tener un buscador de personajes por nombre.
- 2. Segunda vista: al hacer clic a un personaje de la vista anterior deberá llevar a una nueva vista y desplegar. todos los datos de este.
- 3. Todas las vistas deben ser responsivas recuerda "Mobile First".
- 4. Al terminar tu proyecto, envía el Link de tu repositorio a tu reclutador.
+ 1. First view: 
+	- Get list with every character, this view must be displayed in a [GRID](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout) and has to be shown as a card list [Card view](https://material.io/develop/android/components/cards/), in which you'll have to show the character's most important data, [take as reference the same page for this cards](https://rickandmortyapi.com).
+	- Must have a search bar with the functionality of search character by name.
+	- BONUS: Implement pagination on the list.
+ 2. Second view: when clicking a character in the first view you should be redirected to a new view and display the character with all its data. In this view you must be able to add or remove a character as "favorite" (state management).
+ 3. Third view: must display the characters marked as "favorite".
+ 4. All views must be responsive. Remember: "Mobile First".
+ 5. When you are done with the task, send the repository link to your recruiter.
 
+### How to submit your work?
 
-```mermaid
-graph LR
-A[List of characters] -- Get characters --> B(API)
-B -- List of characters found --> A
-A -- Show character --> C(Character view)
-C -- Get character --> B
-B -- Character response --> C
-```
+1. ##### First you need to fork this repository.
 
+2. ##### Then clone your fork locally.
 
-### Indicaciones Generales.
-Puedes usar cualquier librería para el diseño de la UI incluso si lo quieres hacer sin usar librerías estaría genial.
-De igual forma eres libre de usar cualquier servicio para hacer las consultas al API.
+3. ##### Install the app locally.
 
-**Mucha suerte**
+4. ##### Once you've completed your work, you can submit a pull-request to the remote repository.
+
+### General guidelines.
+You can use any library for the UI design but if you want to use none, it's cool.
+You are free to use any third party service when fetching the API.
+
+**Best of luck**

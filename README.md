@@ -1,3 +1,32 @@
+# Prueba Técnica FITbody
+
+Prueba técnica para FITbody Frontend
+
+## Comenzando 🚀
+
+### Pre-requisitos 📋
+
+node.js, si aun no lo tienes puedes instalardo [aquí](https://nodejs.org/es/download/)
+git, si aun no lo tienes puedes instalardo [aquí](https://git-scm.com/)
+
+### Instalación 🔧
+
+Descarga este repositorio y ejecuta los siguientes comandos
+
+```bash
+$ git clone https://github.com/DanielGoycochea/jr-frontend-challenge
+$ cd jr-frontend-challenge
+$ npm install
+$ npm run start
+```
+
+## Creado con 🛠️
+
+- [react.js](https://es.reactjs.org/) - Una biblioteca de JavaScript para construir interfaces de usuario
+- [styled-components](https://styled-components.com/) - Manejo de CSS.
+- [redux](https://es.redux.js.org/) - Redux es un contenedor predecible del estado de aplicaciones JavaScript.
+
+
 # Rick and Morty App!
 
 The main objective of this challenge is to test your abilities as a front-end developer.

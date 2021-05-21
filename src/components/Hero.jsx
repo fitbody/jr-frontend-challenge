@@ -11,6 +11,7 @@ const Container = styled.div`
   height: calc(50vh - 60px);
   text-align: center;
   position: relative;
+  background: #ffffff;
 `;
 
 const Title = styled.h1`

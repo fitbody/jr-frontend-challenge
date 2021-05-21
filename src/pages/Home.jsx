@@ -5,15 +5,20 @@ import Container from "../components/Container";
 import Hero from "../components/Hero";
 import Card from "../components/Card";
 import Pagination from "../components/Pagination";
+import SearchBar from "../components/SearchBar";
 
 const Home = () => {
   const [data, setData] = useState([]);
   const [pageNumber, setPageNumber] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
-
+  const [searchText, setSearchText] = useState("");
   useEffect(() => {
     getCharacters(pageNumber, setData);
   }, [pageNumber]);
+
+  useEffect(() => {
+    getSearchResults(searchText);
+  }, [searchText]);
 
   const getCharacters = async (page, setData) => {
     setIsLoading(true);
@@ -27,9 +32,17 @@ const Home = () => {
       .catch((err) => console.error(err));
   };
 
+  const getSearchResults = async (text) => {
+    await axios
+      .get(`https://rickandmortyapi.com/api/character/?name=${text}`)
+      .then((response) => setData(response.data))
+      .catch((err) => console.error(err));
+  };
+  
   return (
     <div>
       <Hero />
+      <SearchBar setSearchText={setSearchText} />
       <Pagination
         pageNumber={pageNumber}
         setPageNumber={setPageNumber}

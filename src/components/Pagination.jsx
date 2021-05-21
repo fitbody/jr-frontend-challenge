@@ -38,8 +38,8 @@ const Pagination = ({ pageNumber, setPageNumber, maxPages }) => {
 
   return (
     <ContainerButtons>
-      <Button onClick={handlePrev}>prev</Button>
-      <Button onClick={handleNext}>next</Button>
+      <Button onClick={handlePrev}>prev page</Button>
+      <Button onClick={handleNext}>next page</Button>
     </ContainerButtons>
   );
 };

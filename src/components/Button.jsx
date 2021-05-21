@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 
 const ButtonContainer = styled.button`
   background-color: #4caf50;
@@ -11,13 +12,19 @@ const ButtonContainer = styled.button`
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  a {
-    color: white;
-  }
 `;
 
-const Button = ({ children }) => {
-  return <ButtonContainer>{children}</ButtonContainer>;
+const Button = ({ children, isFavorite }) => {
+  const history = useHistory();
+  return (
+    <ButtonContainer
+      onClick={() => {
+        isFavorite ? history.push("/favorites") : history.goBack();
+      }}
+    >
+      {children}
+    </ButtonContainer>
+  );
 };
 
 export default Button;

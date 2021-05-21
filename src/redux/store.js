@@ -9,8 +9,7 @@ const reducer = combineReducers({
 
 const store = createStore(
   reducer,
-  loadFromLocalStorage(),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  loadFromLocalStorage()
 );
 store.subscribe(() => saveToLocalStorage(store.getState()));
 

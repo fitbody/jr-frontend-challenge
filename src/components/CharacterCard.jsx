@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { addFavorite, deleteFavorite } from "../redux/actions/favorites";
 import Button from "./Button";
@@ -66,7 +65,7 @@ const StatusIcon = styled.span`
 `;
 
 const FavotiteIcon = styled.span`
-  color: ${(props) => (props.favorite ? "red" : "rgb(158, 158, 158);")};
+  color: ${(props) => (props.favorite ? "#FF0000" : "#9E9E9E")};
   font-size: 2.5rem;
   cursor: pointer;
 `;
@@ -154,9 +153,7 @@ const CharacterCard = ({ data }) => {
           </SectionIcon>
         </ContentWrapper>
       </Container>
-      <Link to="/">
-        <Button>go back</Button>
-      </Link>
+      <Button>go back</Button>
     </div>
   );
 };

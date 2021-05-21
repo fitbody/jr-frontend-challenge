@@ -8,7 +8,6 @@ import styled from "styled-components";
     align-items: center;
     padding: 4.5rem 0px;
     background: rgb(36, 40, 47);
-    min-height: 100vh;
     @media (max-width: 40.62em) {
     padding: 1.5rem;
   }

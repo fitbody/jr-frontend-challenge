@@ -1,26 +1,38 @@
-import React from 'react'
+import React from "react";
 import { useSelector } from "react-redux";
-import {Link} from "react-router-dom"
-import Container from '../components/Container';
-import Card from '../components/Card'
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import Container from "../components/Container";
+import Card from "../components/Card";
+import Title from "../components/Title";
+import Button from "../components/Button";
+
+const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 3em 0;
+`;
 
 const Favorites = () => {
   const { favorites } = useSelector((state) => state);
   return (
-    <Container>
-      {favorites.map((character) => (
-        <Card key={character.id} data={character} resume={true} />
-      ))}
-      {!favorites.length && (
-        <div style={{ color: "#ffffff" }}>
-          you have no favorites added{" "}
-          <Link to="/" style={{ color: "grey" }}>
-            go back
-          </Link>
-        </div>
-      )}
-    </Container>
+    <>
+      <HeaderContainer>
+        <Title primary>Favorites</Title>
+      </HeaderContainer>
+      <HeaderContainer>
+        <Button>go back</Button>
+      </HeaderContainer>
+      <Container>
+        {favorites.map((character) => (
+          <Card key={character.id} data={character} resume={true} />
+        ))}
+        {!favorites.length && (
+          <div style={{ color: "#ffffff" }}>you have no favorites added</div>
+        )}
+      </Container>
+    </>
   );
-}
+};
 
-export default Favorites
+export default Favorites;

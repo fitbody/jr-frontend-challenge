@@ -12,6 +12,7 @@ const Home = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
   const [searchText, setSearchText] = useState("");
+  
   useEffect(() => {
     getCharacters(pageNumber, setData);
   }, [pageNumber]);

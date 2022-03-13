@@ -29,7 +29,10 @@ const Favorite = () => {
         }
       })} */}
 
+
       {
+
+        context.length>0?
          context.map((personaje)=>(
           // <li key={personaje.id}>{personaje.name}</li>
 
@@ -57,7 +60,9 @@ const Favorite = () => {
                   </Grid>
                   
                 ))
-              }
+        :
+        <Typography variant="h6" color="initial">No hay favoritos en este momento</Typography>
+      }
 
 
 
